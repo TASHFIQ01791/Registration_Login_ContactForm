@@ -37,7 +37,7 @@ export const RegistrationForm1 = () => {
       password,
       passwordRepeat,
     };
-    console.log(name)
+    console.log(name);
   };
   return (
     <form onSubmit={handleOnSubmit}>

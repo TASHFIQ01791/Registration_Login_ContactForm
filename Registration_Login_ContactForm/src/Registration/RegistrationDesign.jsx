@@ -13,7 +13,7 @@ export const RegistrationDesign = ({
 
         {/* label and input for  firstName  */}
         <label htmlFor="firstName">
-          <b>First Name: </b>
+          <b>First Name:{user.firstName} </b>
         </label>
         <input
           type="text"
@@ -27,7 +27,7 @@ export const RegistrationDesign = ({
 
         {/* label and input for lastName  */}
         <label htmlFor="lastName">
-          <b>Last Name: </b>
+          <b>Last Name:{user.lastName} </b>
         </label>
         <input
           type="text"
@@ -40,7 +40,7 @@ export const RegistrationDesign = ({
         />
         {/* label and input for Email  */}
         <label htmlFor="email">
-          <b>Email: </b>
+          <b>Email:{user.email} </b>
         </label>
         <input
           type="email"
@@ -53,7 +53,7 @@ export const RegistrationDesign = ({
         />
         {/* label and input for Password  */}
         <label htmlFor="password">
-          <b>password: </b>
+          <b>password:{user.password ? "******" : ""} </b>
         </label>
         <input
           type="password"
@@ -66,7 +66,7 @@ export const RegistrationDesign = ({
 
         {/* label and input for Repeat Password  */}
         <label htmlFor="passwordRepeat">
-          <b>Repeat Password: </b>
+          <b>Repeat Password:{user.passwordRepeat ? "******" : ""} </b>
         </label>
         <input
           type="password"
@@ -83,7 +83,7 @@ export const RegistrationDesign = ({
         {/* if already have login  */}
         <div>
           <p>
-            Already have an account? <a href="#">Log in</a>.
+            Already have an account? <a href="../Login/LoginForm.jsx">Log in</a>.
           </p>
         </div>
       </div>
